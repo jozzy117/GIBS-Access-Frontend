@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import awaitGif from '../../../assets/img/ball.gif';
 
 const RequestTable = (props) => {
 
@@ -27,7 +28,7 @@ const RequestTable = (props) => {
                             </thead>
                             <tbody style={{textAlign: 'center'}}>
                                 <tr>
-                                    <td>Awaiting approval</td>
+                                    <td><img src={awaitGif} style={{height:"25px"}} alt=""/>Awaiting approval</td>
                                     <td>Jonathan Ojakovo</td>
                                     <td><Link to="/teams-request/req-details" rel="facebox" ><li className="fas fa-eye"></li></Link></td>
                                     <td>17/11/2020 10:13am</td>
